@@ -1,0 +1,22 @@
+<div class="row container d-flex align-item-center">
+    <div class="item d-flex  justify-content-between ">
+        <div class="col d-flex justify-content-center align-self-center">
+            <img src="../img/logo.png" alt="logo">
+        </div>
+        <div class="align-self-center ">
+            <h1>User Login</h1>
+            <form (ngSubmit)="login()">
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" class="form-control" placeholder="Email" id="email" [(ngModel)]="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"></label>
+                    <input type="password" class="form-control" placeholder="Password" id="password" [(ngModel)]="password" name="password" required>
+                    <p class="d-flex justify-content-end mt-1"><a href="#">Forget password</a></p>
+                </div>
+                <button type="submit" class="btn btn-primary mt-1 w-100">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
